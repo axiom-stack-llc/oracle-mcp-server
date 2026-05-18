@@ -1,2 +1,2 @@
 # oracle-mcp-server
-Model Context Protocol server for Axiom Stack Oracle — let AI agents query and verify on-chain attestations for RWA data.
+Model Context Protocol server for Axiom Stack Oracle. AI agents can query and verify on-chain attestations for RWA data.

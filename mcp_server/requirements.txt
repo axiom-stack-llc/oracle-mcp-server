@@ -1,0 +1,15 @@
+# Production dependencies for the Axiom Oracle MCP server container.
+# Pinned-but-flexible lower bounds; the Dockerfile resolves to current PyPI
+# versions at build time. The Compliance-SDK setup.py is the source of truth
+# for the broader app; this file is the minimum subset the MCP container
+# needs to run (without pulling in dev / test / unrelated repo deps).
+
+# MCP protocol + ASGI runtime
+mcp>=1.27
+uvicorn>=0.30
+
+# Oracle SDK runtime deps (used by integrations/oracle_compliance/)
+boto3>=1.26
+solana>=0.32
+solders>=0.21
+borsh-construct>=0.1
